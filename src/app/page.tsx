@@ -7,22 +7,24 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-zinc-900 selection:bg-yellow-100 dark:bg-[#09090b] dark:text-zinc-100">
       
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-zinc-200/50 bg-white/80 backdrop-blur-md dark:border-zinc-800/50 dark:bg-black/80">
+     {/* Navigation - Fixed Alignment for Mobile */}
+     <nav className="sticky top-0 z-50 border-b border-zinc-200/50 bg-white/80 backdrop-blur-md dark:border-zinc-800/50 dark:bg-black/80">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2.5">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-black text-xl font-bold text-white shadow-lg dark:bg-white dark:text-black">
               V
             </div>
-            <span className="text-xl font-bold tracking-tight">VanGuard</span>
+            <span className="text-xl font-bold tracking-tight hidden sm:block">VanGuard</span>
           </div>
-          <div className="flex items-center gap-6">
-            <a href="/login" className="text-sm font-medium transition-colors hover:text-yellow-600 dark:hover:text-yellow-400">
+          
+          {/* Right side nav items */}
+          <div className="flex items-center gap-3 sm:gap-6">
+            <a href="/login" className="text-xs sm:text-sm font-medium transition-colors hover:text-yellow-600 dark:hover:text-yellow-400">
               Admin Portal
             </a>
             <a
               href="/login"
-              className="rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-zinc-700 hover:shadow-lg active:scale-95 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+              className="rounded-full bg-zinc-900 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-all hover:bg-zinc-700 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
             >
               Sign In
             </a>
@@ -150,7 +152,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                  Remote OTA updates via Play Store
+                  Direct APK Deployment with Background Telemetry
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="h-1.5 w-1.5 rounded-full bg-yellow-400" />
