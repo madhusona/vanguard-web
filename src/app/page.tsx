@@ -1,7 +1,4 @@
-
 "use client";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import "leaflet/dist/leaflet.css";
 
 export default function Home() {
   return (
@@ -47,12 +44,11 @@ export default function Home() {
             </a>
 
             <a
-  href="https://github.com/madhusona/vanguard-mobile/releases/tag/v1.0.0"
-  className="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-6 py-3 font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
->
-  Download Driver App (v1.0.0)
-</a>
-
+              href="https://github.com/madhusona/vanguard-mobile/releases/tag/v1.0.0"
+              className="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-6 py-3 font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
+            >
+              Download Driver App (v1.0.0)
+            </a>
           </div>
         </div>
 
@@ -60,14 +56,14 @@ export default function Home() {
         <div className="flex justify-center">
           <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 shadow-sm w-full max-w-md">
             <p className="text-sm text-zinc-500 mb-2">Live Tracking Preview</p>
-            <div className="h-56 rounded-lg bg-zinc-100 dark:bg-zinc-800"> 
-            <MapContainer center={[12.91, 79.83]} zoom={13} style={{ height: "100%", width: "100%" }}> <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
-            <Marker position={[14.2500, 75.3170]}>
-  <Popup>
-    Vehicle: Tn84a8472
-  </Popup>
-</Marker>
-             </MapContainer> </div>
+            <div className="h-56 rounded-lg bg-zinc-100 dark:bg-zinc-800">
+              {/* Replace map with image */}
+              <img 
+                src="vanmap.png" 
+                alt="Seethikere Map with Vehicle" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -132,12 +128,11 @@ export default function Home() {
               </a>
 
               <a
-  href="https://github.com/madhusona/vanguard-mobile/releases/tag/v1.0.0"
-  className="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-6 py-3 font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
->
-  Download Driver App (v1.0.0)
-</a>
-
+                href="https://github.com/madhusona/vanguard-mobile/releases/tag/v1.0.0"
+                className="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-6 py-3 font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
+              >
+                Download Android App (v1.0.0)
+              </a>
             </div>
           </div>
 
